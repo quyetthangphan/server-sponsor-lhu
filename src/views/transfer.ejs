@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="./" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/zebra_dialog.min.js"></script>
+    <link rel="stylesheet" href="./scripts/css/flat/zebra_dialog.css">
+    <script src="./scripts/web3.js"></script>
+    <script src="./process/transfer.process.js"></script>
+    <link rel="stylesheet" href="css/transfer.css">
+    <title>Sponsor</title>
+</head>
+
+<body>
+    <h2 style="color: black;">Danh sách đăng ký nhận học bổng</h2>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th>Họ và tên</th>
+                    <th>Số điện thoại</th>
+                    <th>Mã ví</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+        <div id="popup" class="overlay">
+            <div class="popup">
+                <h2>Thông tin người đăng ký</h2>
+                <button id="close" class="close">&times;</button>
+                <div class="content">
+                    <div>
+                        <label> Họ và tên: </label>
+                        <label id="popName" class="marginText styleText"> Phan Quyết Thắng</label>
+                    </div>
+                    <br />
+                    <div>
+                        <label> Số điện thoại: </label>
+                        <label id="popPhone" class="marginText styleText"> 0789429140</label>
+                    </div>
+                    <br />
+                    <div>
+                        <label> Mã ví: </label>
+                        <label class="marginText">
+                            <span id="popWallet" class="styleText">
+                            </span>
+                        </label>
+                    </div>
+                    <br />
+                    <div>
+                        <label> Nhập số tiền chuyển: </label>
+                        <input class="marginInput" id="txtCoin" type="number" placeholder="Nhập số tiền muốn chuyển" />
+                    </div>
+                    <br />
+                    <div>
+                        <button class="btnPDF" type="button">Xem file pdf</button>
+
+                        <button id="submit" class="btnXacNhan" type="button">Xác nhận</button>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
