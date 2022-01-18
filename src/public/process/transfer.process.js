@@ -406,7 +406,7 @@ $(document).ready(function () {
 
     checkMM();
 
-    const data = [['Nguyễn Văn A', '031231231', ''], ['Nguyễn Văn B', '031231231', ''], ['Nguyễn Văn C', '031231231', ''],];
+    const data = [['Nguyễn Văn A', '031231231', '0xBAb3e19ff9C4D4A8cEf4702a9Fc1f19adDd1774b'], ['Nguyễn Văn B', '031231231', '0x752Fe7175781Dd620adb7091d914cC2044375aae'], ['Nguyễn Văn C', '031231231', '0xc4Ba7689DCBF3a8f825110A6EBdaA2943fA8F224'],];
 
     data.forEach(e => {
         addElement(e[0], e[1], e[2]);
